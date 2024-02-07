@@ -1,4 +1,5 @@
 .aboutme {
+  padding-top: 50px;
   .title-aboutme h2 {
     display: flex;
     width: 20%;
@@ -7,8 +8,11 @@
   h2 {
     font-family: "Lemon/Milk", sans-serif;
     font-weight: 400;
-    border-bottom: solid red 3px;
-    width: 20%;
+
+    border-bottom: solid 4px;
+
+    border-image: linear-gradient(45deg, rgb(207, 100, 154), rgb(242, 78, 30)) 1;
+    width: 20%; // border-bottom: 3px solid;
   }
 }
 
