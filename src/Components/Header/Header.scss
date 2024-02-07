@@ -1,12 +1,27 @@
 .navbar {
   display: flex;
   list-style: none;
-  gap: 15px;
-  justify-content: flex-end;
+  gap: 35px;
+  justify-content: space-evenly;
   background: white;
   padding: 15px;
+  flex-direction: row;
+
   li {
-    color: red;
-    font-weight: 900;
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(207, 100, 154, 1) 0%, rgba(242, 78, 30, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: "Lemon/Milk", sans-serif;
   }
+}
+.containerHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3px 0px 0px 0px;
 }

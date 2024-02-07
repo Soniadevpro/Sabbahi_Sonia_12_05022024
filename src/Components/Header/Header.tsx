@@ -3,6 +3,8 @@ import '../Header/Header.scss'
 const Header = () => {
     return (
         <div>
+            <div className="containerHeader">
+
             {/* logo */}
 <div className="navbar">
             <li>Home</li>
@@ -10,6 +12,7 @@ const Header = () => {
             <li>Projects</li>
             <li>Contact</li>
 </div>
+            </div>
          
         </div>
     );

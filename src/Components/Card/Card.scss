@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-container {
+  display: flex;
+
+  width: 305px;
+  height: 305px;
+  background: linear-gradient(90deg, rgba(207, 100, 154, 1) 0%, rgba(242, 78, 30, 1) 100%);
+  opacity: 60%;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  p {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+    display: flex;
+  }
+}
