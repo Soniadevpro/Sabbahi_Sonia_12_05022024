@@ -1,0 +1,41 @@
+/*Header - NavBar*/
+
+.navbar {
+  li {
+    --c: linear-gradient(to right, $gradient-primary, $gradient-secondary); // update the color here
+
+    padding-bottom: 0.5em;
+    background: var(--c), var(--c);
+    background-size: 0.3em 0.1em;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: 0.2s linear, background-size 0.3s 0.2s linear;
+
+    &:hover {
+      background-size: 40% 0.1em;
+      background-position: 10% 100%, 90% 100%;
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    list-style: none;
+    margin-top: 10px;
+    padding: 15px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3px; // Épaisseur de la bordure
+      background: linear-gradient(to right, $gradient-primary, $gradient-secondary); // Dégradé de votre choix
+    }
+  }
+}
