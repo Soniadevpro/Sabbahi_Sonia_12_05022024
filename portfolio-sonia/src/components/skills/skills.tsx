@@ -3,10 +3,11 @@ import logoOC from "../../assets/logo-OpenClassRooms-COM-du-SITE-WEB-9.jpg"
 import figma from "../../assets/icon/icons8-figma (1).svg"
 import sass from "../../assets/icon/icons8-toupet (1).svg"
 import tailwind from "../../assets/icon/icons8-tailwind-css.svg"
-import react from "../../assets/icon/icons8-réagir (2).svg"
-// import typescript from "../../assets/icon/"
+import react from "../../assets/icon/icons8-réagir (4).svg"
+import typescript from "../../assets/icon/icons8-manuscrit (2).svg"
 import methodeAgile from "../../assets/icon/icons8-agile-64.png"
-// import creativity from "../../assets/icon/"
+import curiosity from "../../assets/icon/icons8-question-64 (1).png"
+import creativity from "../../assets/icon/icons8-creative-64 (1).png"
 import sophiaB from "../../assets/sophiabluel.png"
 import kasa from "../../assets/kasa.png"
 import argentbank from "../../assets/argentbank.png"
@@ -30,7 +31,7 @@ const skills = () => {
             <h3>Front-end</h3>
             <ul>
               <li><img src={react} alt="" />React</li>
-              <li><img src="./assets/images/socialnet/typescript-svgrepo-com (1).svg" alt="" />typescript</li>
+              <li><img src={typescript} alt="" />typescript</li>
               <li></li>
             </ul>
           </div>
@@ -38,8 +39,8 @@ const skills = () => {
             <h3>Soft</h3>
             <ul>
               <li><img src={methodeAgile} alt="" />Méthodes agiles</li>
-              <li><img src="./assets/skills/icons8-idée-64.png" alt="" />Creativity</li>
-              <li><img src="./assets/skills/icons8-question-64.png" alt="" />Curiosity</li>
+              <li><img src={curiosity} alt="" />Curiosity</li>
+              <li><img src={creativity} alt="" />Creativity</li>
             </ul>
           </div>
         

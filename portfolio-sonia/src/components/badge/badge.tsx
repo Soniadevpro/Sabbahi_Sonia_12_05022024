@@ -1,23 +1,23 @@
 
 
-const badge = () => {
+const Badge = () => {
     return (
         <div>
-             <div className="description-container">
-         
-         <div className="social-network">
-           <div className="badge">
-            
-             GitHub
-           </div>
-           <div className="badge">Twitter</div>
-           <div className="badge">Youtube</div>
-           <div className="badge">LinkedIn</div>
-           <div className="badge">CV</div>
-         </div>
-       </div>  
+            <div className="description-container">
+                <div className="social-network">
+             
+        <div className="badge"><a href="https://github.com/Soniadevpro" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+                   
+         <div className="badge"><a href="https://www.youtube.com/@SodreamLevelUp" target="_blank" rel="noopener noreferrer">Youtube</a></div>
+        <div className="badge"><a href="https://www.linkedin.com/in/sonia-sabbahi" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+        <div className="badge">CV</div>
+                </div>
+            </div>  
+          
         </div>
+      
+       
     );
 };
 
-export default badge;
+export default Badge;
