@@ -7,6 +7,11 @@ import react from "../../assets/icon/icons8-réagir (2).svg"
 // import typescript from "../../assets/icon/"
 import methodeAgile from "../../assets/icon/icons8-agile-64.png"
 // import creativity from "../../assets/icon/"
+import sophiaB from "../../assets/sophiabluel.png"
+import kasa from "../../assets/kasa.png"
+import argentbank from "../../assets/argentbank.png"
+import mikeform from "../../assets/mikeform.png"
+
 const skills = () => {
     return (
         <div>
@@ -49,7 +54,7 @@ const skills = () => {
         </div>
         <div className="container">
           <div className="card">
-            <img src="./assets/images/Capture d'écran 2024-03-01 112123.png" alt="Umi" className="card-img-top" />
+            <img src={sophiaB} alt="Umi" className="card-img-top" />
             <div className="card-body">
               <h5 className="card-title">Portfolio - Sophia Bluel</h5>
               <p className="card-text">Développer un portfolio d'architecte, en commençant par la page de présentation des travaux de celle ci.</p>
@@ -57,7 +62,7 @@ const skills = () => {
             </div>
           </div>
           <div className="card">
-            <img src="./assets/images/socialnet/kasa-readme.png" alt="Umi" className="card-img-top" />
+            <img src={kasa} alt="Umi" className="card-img-top" />
             <div className="card-body">
               <h5 className="card-title">Kasa</h5>
               <p className="card-text">l'entreprise Kasa hébergement entre particulier.</p>
@@ -65,7 +70,7 @@ const skills = () => {
             </div>
           </div>
           <div className="card">
-            <img src="./assets/images/Capture d'écran 2024-03-01 111228.png" alt="Mori" className="card-img-top" />
+            <img src={argentbank} alt="Mori" className="card-img-top" />
             <div className="card-body">
               <h5 className="card-title">Argent Bank</h5>
               <p className="card-text"></p>
@@ -88,7 +93,7 @@ const skills = () => {
           </div>
 
           <div className="card">
-            <img src="./assets/images/Capture d'écran 2024-03-01 111458.png" alt="Umi" className="card-img-top" />
+            <img src={mikeform} alt="Umi" className="card-img-top" />
             <div className="card-body">
               <h5 className="card-title">Mike-Codeur formation</h5>
               <p className="card-text">Expert React</p>
@@ -96,7 +101,7 @@ const skills = () => {
             </div>
           </div>
           <div className="card">
-            <img src="./assets/images/Capture d'écran 2024-03-01 111228.png" alt="Mori" className="card-img-top" />
+            <img src={logoOC} alt="Mori" className="card-img-top" />
             <div className="card-body">
               <h5 className="card-title">Openclassrooms</h5>
               <p className="card-text">Développeur JavaScript - React</p>
