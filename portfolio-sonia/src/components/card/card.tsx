@@ -1,0 +1,84 @@
+import sophiaB from "../../assets/sophiabluel.png"
+import kasa from "../../assets/kasa.png"
+import argentbank from "../../assets/argentbank.png"
+import mikeform from "../../assets/mikeform.png"
+import logoOC from "../../assets/logo-OpenClassRooms-COM-du-SITE-WEB-9.jpg"
+
+
+
+const card = () => {
+    return (
+        <div>
+            <section className="projects-container">
+<h3>Projects</h3>
+<div className="categories">
+  <div className="filters"><span>Top</span></div>
+  <div className="filters"><span>School</span></div>
+  <div className="filters"><span>Personal</span></div>
+</div>
+<div className="container">
+  <div className="card">
+    <img src={sophiaB} alt="Umi" className="card-img-top" />
+    <div className="card-body">
+      <h5 className="card-title">Portfolio - Sophia Bluel</h5>
+      <p className="card-text">Développer un portfolio d'architecte, en commençant par la page de présentation des travaux de celle ci.</p>
+      <a href="#" className="btn">More</a>
+    </div>
+  </div>
+  <div className="card">
+    <img src={kasa} alt="Umi" className="card-img-top" />
+    <div className="card-body">
+      <h5 className="card-title">Kasa</h5>
+      <p className="card-text">l'entreprise Kasa hébergement entre particulier.</p>
+      <a href="#" className="btn">More</a>
+    </div>
+  </div>
+  <div className="card">
+    <img src={argentbank} alt="Mori" className="card-img-top" />
+    <div className="card-body">
+      <h5 className="card-title">Argent Bank</h5>
+      <p className="card-text"></p>
+      <a href="#" className="btn">More</a>
+    </div>
+  </div>
+</div>
+
+</section>
+<section className="projects-container">
+        <h3>Courses</h3>
+        <div className="container">
+          <div className="card">
+            <img src={logoOC} alt="Sora" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Openclassrooms</h5>
+              <p className="card-text">Développeur/Intégrateur web</p>
+              <a href="#" className="btn">More</a>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={mikeform} alt="Umi" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Mike-Codeur formation</h5>
+              <p className="card-text">Expert React</p>
+              <a href="#" className="btn">More</a>
+            </div>
+          </div>
+          <div className="card">
+            <img src={logoOC} alt="Mori" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Openclassrooms</h5>
+              <p className="card-text">Développeur JavaScript - React</p>
+              <a href="#" className="btn">More</a>
+            </div>
+          </div>
+        </div>
+   
+      </section>
+        </div>
+    );
+};
+
+export default card;
+
+

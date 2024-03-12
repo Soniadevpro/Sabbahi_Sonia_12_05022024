@@ -1,0 +1,20 @@
+[
+    {
+        "Name" : "Portfolio Sophia Bluel",
+        "Techno": ["JavaScript", "SCSS","HTML"],
+        "Description" : "Développer un portfolio d'architecte, en commençant par la page de présentation des travaux de celle ci.",
+        "Github": "link"
+    },
+    {
+        "Name" : "Kasa",
+        "Techno": ["SCSS","React"],
+        "Description" : "Développer un portfolio d'architecte, en commençant par la page de présentation des travaux de celle ci.",
+        "Github": "link"
+    },
+    {
+        "Name" : "Argent Bank",
+        "Techno": ["React", "Redux"],
+        "Description" : "Développer un portfolio d'architecte, en commençant par la page de présentation des travaux de celle ci.",
+        "Github": "link"
+    }
+]
