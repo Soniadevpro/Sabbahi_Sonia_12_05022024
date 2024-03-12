@@ -13,7 +13,7 @@ import creativity from "../../assets/icon/icons8-creative-64 (1).png"
 const skills = () => {
     return (
         <div>
-             <section className="skills">
+             <section className="skills" id="skills-section">
         <h2>Skills</h2>
         <div className="skills-container">
           <div className="skills-design">

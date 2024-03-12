@@ -21,12 +21,13 @@
   ul {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 15px;
     list-style: none;
     margin-top: 10px;
     padding: 15px;
     position: relative;
+    align-items: center;
 
     &::after {
       content: "";
