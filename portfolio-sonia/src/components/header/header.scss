@@ -1,19 +1,29 @@
-/*Header - NavBar*/
+/* Header - NavBar */
 
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  background: transparent;
+  &.scrolled {
+    /* Cela cible .navbar lorsqu'elle a également la classe .scrolled */
+    background-color: #e01616; /* Changez en fonction de votre design */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Exemple d'effet visuel lors du défilement */
+  }
   li {
-    --c: linear-gradient(to right, $gradient-primary, $gradient-secondary); // update the color here
+    --c: linear-gradient(to right, rgb(255, 136, 0), rgb(231, 77, 231)); // Mettez à jour la couleur ici
 
     padding-bottom: 0.5em;
-    background: var(--c), var(--c);
-    background-size: 0.3em 0.1em;
-    background-position: 50% 100%;
+    background: var(--c);
+    background-size: 0% 0.1em; // Commencez sans soulignement visible
+    background-position: bottom center; // Positionnez le gradient au bas du li
     background-repeat: no-repeat;
-    transition: 0.2s linear, background-size 0.3s 0.2s linear;
+    transition: background-size 0.3s ease, background-position 0s; // Animer uniquement la taille du fond
 
     &:hover {
-      background-size: 40% 0.1em;
-      background-position: 10% 100%, 90% 100%;
+      background-size: 100% 0.1em; // Étendre le soulignement sur 100% de la largeur au survol
       cursor: pointer;
     }
   }
@@ -35,8 +45,8 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 3px; // Épaisseur de la bordure
-      background: linear-gradient(to right, $gradient-primary, $gradient-secondary); // Dégradé de votre choix
+      height: 3px; // Épaisseur du soulignement
+      background: linear-gradient(to right, rgb(255, 136, 0), rgb(231, 77, 231)); // Assurez-vous que les variables sont définies ou remplacées par des valeurs directes
     }
   }
 }
