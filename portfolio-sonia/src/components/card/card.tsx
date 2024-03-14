@@ -1,3 +1,6 @@
+import  { useState } from 'react';
+import Modal from '../modal/modal'; 
+
 import sophiaB from "../../assets/sophiabluel.png"
 import kasa from "../../assets/kasa.png"
 import argentbank from "../../assets/argentbank.png"
@@ -7,6 +10,15 @@ import logoOC from "../../assets/logo-OpenClassRooms-COM-du-SITE-WEB-9.jpg"
 
 
 const Card = () => {
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalContent, setModalContent] = useState({ photoUrl: '', description: '' });
+
+  const openModal = (photoUrl, description) => {
+      setModalContent({ photoUrl, description });
+      setModalIsOpen(true);
+  };
+
     return (
         <div>
             <section className="projects-container">
@@ -17,14 +29,14 @@ const Card = () => {
   <div className="filters"><span>Personal</span></div>
 </div>
 <div className="container">
-  <div className="card">
-    <img src={sophiaB} alt="Umi" className="card-img-top" />
-    <div className="card-body">
-      <h5 className="card-title">Portfolio - Sophia Bluel</h5>
-      <p className="card-text">Développer un portfolio d'architecte, en commençant par la page de présentation des travaux de celle ci.</p>
-      <a href="#" className="btn">More</a>
-    </div>
-  </div>
+<div className="card">
+                    <img src={sophiaB} alt="Sophia Bluel" className="card-img-top" />
+                    <div className="card-body">
+                        <h5 className="card-title">Portfolio - Sophia Bluel</h5>
+                        <p className="card-text">Développer un portfolio d'architecte, en commençant par la page de présentation des travaux de celle-ci.</p>
+                        <button onClick={() => openModal(sophiaB, "Développer un portfolio d'architecte, en commençant par la page de présentation des travaux de celle-ci.")} className="btn">More</button>
+                    </div>
+                </div>
   <div className="card">
     <img src={kasa} alt="Umi" className="card-img-top" />
     <div className="card-body">
@@ -75,6 +87,12 @@ const Card = () => {
         </div>
    
       </section>
+      <Modal
+                isOpen={modalIsOpen}
+                photoUrl={modalContent.photoUrl}
+                description={modalContent.description}
+                onClose={() => setModalIsOpen(false)}
+            />
         </div>
     );
 };
