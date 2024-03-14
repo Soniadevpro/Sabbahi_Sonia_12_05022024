@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./header.scss"
+
 interface NavigationItem {
   name: string;
   id: string;

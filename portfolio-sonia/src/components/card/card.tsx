@@ -6,7 +6,7 @@ import logoOC from "../../assets/logo-OpenClassRooms-COM-du-SITE-WEB-9.jpg"
 
 
 
-const card = () => {
+const Card = () => {
     return (
         <div>
             <section className="projects-container">
@@ -79,6 +79,6 @@ const card = () => {
     );
 };
 
-export default card;
+export default Card;
 
 

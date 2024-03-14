@@ -5,11 +5,16 @@ const Badge = () => {
         <div>
             <div className="description-container">
                 <div className="social-network">
-             
-        <div className="badge"><a href="https://github.com/Soniadevpro" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-                   
-         <div className="badge"><a href="https://www.youtube.com/@SodreamLevelUp" target="_blank" rel="noopener noreferrer">Youtube</a></div>
-        <div className="badge"><a href="https://www.linkedin.com/in/sonia-sabbahi" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+
+                <a href="https://github.com/Soniadevpro" target="_blank" rel="noopener noreferrer">
+        <div className="badge">GitHub</div></a>
+
+        <a href="https://www.youtube.com/@SodreamLevelUp" target="_blank" rel="noopener noreferrer">  
+         <div className="badge">Youtube</div></a>
+
+         <a href="https://www.linkedin.com/in/sonia-sabbahi" target="_blank" rel="noopener noreferrer">
+        <div className="badge">LinkedIn</div></a>
+        
         <div className="badge">CV</div>
                 </div>
             </div>  
