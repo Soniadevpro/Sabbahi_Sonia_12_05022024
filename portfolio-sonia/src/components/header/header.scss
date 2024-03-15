@@ -10,10 +10,8 @@
   transition: all 0.3s ease;
   background: transparent;
   &.scrolled {
-    background-color: rgb(59, 55, 55);
     display: flex;
-    align-items: center;
-    border: 2px rgb(255, 255, 255) solid;
+
     /* margin: -13px; */
     width: 432px;
     border-radius: 150px;
@@ -31,10 +29,27 @@
     background-position: bottom center; // Positionnez le gradient au bas du li
     background-repeat: no-repeat;
     transition: background-size 0.3s ease, background-position 0s; // Animer uniquement la taille du fond
-
+    &.active {
+      // background-size: 100% 0.1em; // Appliquez le soulignement sur 100% de la largeur pour l'élément actif
+      // background-position: bottom center;
+      background: linear-gradient(to right, rgb(255, 136, 0), rgb(231, 77, 231));
+      border: 5px solid;
+      border-radius: 83px;
+      display: flex;
+      padding: 3px;
+    }
     &:hover {
       background-size: 100% 0.1em; // Étendre le soulignement sur 100% de la largeur au survol
       cursor: pointer;
+    }
+    button {
+      background: transparent;
+      color: white;
+      border: none;
+      font-size: medium;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 

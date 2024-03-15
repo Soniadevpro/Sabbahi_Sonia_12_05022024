@@ -8,7 +8,7 @@ import Footer from "../../components/footer/footer"
 const home = () => {
     return (
         <div>
-            <header>
+            <header id= 'home-section'>
             <Header/>
 
             </header>

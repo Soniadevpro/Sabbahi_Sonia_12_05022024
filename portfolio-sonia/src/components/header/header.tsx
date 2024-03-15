@@ -7,11 +7,11 @@ interface NavigationItem {
 }
 
 const navigationItems: NavigationItem[] = [
-  { name: '0.Home', id: 'home-section' },
+  { name: '0.Home', id: 'home-section', action: 'scrollToHome' },
   { name: '1.Skills', id: 'skills-section', action: 'scrollToSkills' },
-  { name: '2.Projects', id: 'projects-section' },
-  { name: '3.Courses', id: 'courses-section' },
-  { name: '4.Contact', id: 'contact-section' },
+  { name: '2.Projects', id: 'projects-section', action: 'scrollToProjects' },
+  { name: '3.Courses', id: 'courses-section', action: 'scrollToCourses' },
+  { name: '4.Contact', id: 'contact-section', action: 'scrollToContact' },
 ];
 
 const Header: React.FC = () => {
@@ -20,32 +20,28 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Mettez à jour `scrolled` basé sur la position de défilement.
       const isScrolled = window.scrollY > 100;
       if (isScrolled !== scrolled) {
         setScrolled(isScrolled);
       }
   
-      // Exemple simplifié de logique pour déterminer la section active.
-      // Cela suppose que chaque section a un offsetTop et une hauteur qui peut être comparée à window.scrollY.
       let currentSectionId = null;
-      for (const item of navigationItems) {
+      navigationItems.forEach((item) => {
         const sectionElement = document.getElementById(item.id);
         if (sectionElement) {
-          const sectionTop = sectionElement.offsetTop;
-          const sectionHeight = sectionElement.offsetHeight;
-          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+          const sectionTop = sectionElement.offsetTop - 100; // Ajout d'une marge
+          const sectionBottom = sectionTop + sectionElement.offsetHeight;
+          if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
             currentSectionId = item.id;
-            break; // Sortez de la boucle une fois la section actuelle trouvée.
           }
         }
-      }
-      setActiveSection(currentSectionId); // Mettez à jour l'état avec l'ID de la section actuelle.
+      });
+  
+      setActiveSection(currentSectionId);
     };
   
-    // Écoutez l'événement de défilement pour mettre à jour la section active.
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Appel initial pour définir la section active lors du chargement de la page.
+    handleScroll();
   
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -66,15 +62,15 @@ const Header: React.FC = () => {
 
       <div className={`navbar ${scrolled ? 'scrolled' : ''}`} >
           <ul>
-            {navigationItems.map((item) => (
-              <li key={item.id} className={activeSection === item.id ? 'scrolled' : ''}>
-                {item.action ? (
-                  <button onClick={() => scrollToSection(item.id)}>{item.name}</button>
-                ) : (
-                  <span>{item.name}</span> // or use <a href={`#${item.id}`}> for actual links
-                )}
-              </li>
-            ))}
+          {navigationItems.map((item) => (
+  <li key={item.id} className={activeSection === item.id ? 'active' : ''}>
+    {item.action ? (
+      <button onClick={() => scrollToSection(item.id)}>{item.name}</button>
+    ) : (
+      <span>{item.name}</span> // or use <a href={`#${item.id}`}> for actual links
+    )}
+  </li>
+))}
           </ul>
         </div>
         </div>

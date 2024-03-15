@@ -14,19 +14,19 @@ const Card = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState({ photoUrl: '', description: '' });
 
-  const openModal = (photoUrl, description) => {
-      setModalContent({ photoUrl, description });
-      setModalIsOpen(true);
+  const openModal = (photoUrl: string, description: string) => {
+    setModalContent({ photoUrl, description });
+    setModalIsOpen(true);
   };
 
     return (
         <div>
-            <section className="projects-container">
+            <section className="projects-container" id='projects-section'>
 <h3>Projects</h3>
 <div className="categories">
   <div className="filters"><span>Top</span></div>
-  <div className="filters"><span>School</span></div>
-  <div className="filters"><span>Personal</span></div>
+  {/* <div className="filters"><span>School</span></div>
+  <div className="filters"><span>Personal</span></div> */}
 </div>
 <div className="container">
 <div className="card">
@@ -56,8 +56,9 @@ const Card = () => {
 </div>
 
 </section>
+
 <section className="projects-container">
-        <h3>Courses</h3>
+        <h3 id= 'courses-section'>Courses</h3>
         <div className="container">
           <div className="card">
             <img src={logoOC} alt="Sora" className="card-img-top" />
