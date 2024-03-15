@@ -30,13 +30,9 @@
     background-repeat: no-repeat;
     transition: background-size 0.3s ease, background-position 0s; // Animer uniquement la taille du fond
     &.active {
-      // background-size: 100% 0.1em; // Appliquez le soulignement sur 100% de la largeur pour l'élément actif
-      // background-position: bottom center;
-      background: linear-gradient(to right, rgb(255, 136, 0), rgb(231, 77, 231));
-      border: 5px solid;
-      border-radius: 83px;
-      display: flex;
-      padding: 3px;
+      background-size: 100% 0.1em; // Appliquez le soulignement sur 100% de la largeur pour l'élément actif
+      background-position: bottom center;
+      border-bottom: solid 10px linear-gradient(to right, rgb(255, 136, 0), rgb(231, 77, 231));
     }
     &:hover {
       background-size: 100% 0.1em; // Étendre le soulignement sur 100% de la largeur au survol

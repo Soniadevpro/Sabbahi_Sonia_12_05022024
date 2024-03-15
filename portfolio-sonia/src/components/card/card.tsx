@@ -57,7 +57,7 @@ const Card = () => {
 
 </section>
 
-<section className="projects-container">
+<section className="projects-container" id= 'courses-section'>
         <h3 id= 'courses-section'>Courses</h3>
         <div className="container">
           <div className="card">
