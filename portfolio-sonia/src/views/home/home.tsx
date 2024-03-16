@@ -8,18 +8,13 @@ import Footer from "../../components/footer/footer"
 const home = () => {
     return (
         <div>
-            <header id= 'home-section'>
-            <Header/>
-
-            </header>
-            <main>
-               <Hero/> 
-<Badge/>
-            </main>
-           <Skills/>
-           <Projects/>
-<Form/>
-<Footer/>
+            <Header />
+            <Hero/> 
+            <Badge/>
+            <Skills/>
+            <Projects/>
+            <Form/>
+            <Footer/>
         </div>
     );
 };
