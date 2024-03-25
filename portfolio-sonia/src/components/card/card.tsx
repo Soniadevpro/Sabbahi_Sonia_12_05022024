@@ -24,7 +24,7 @@ const Card = () => {
             <section className="projects-container" id='projects-section'>
 <h3>Projects</h3>
 <div className="categories">
-  <div className="filters"><span>Top</span></div>
+  {/* <div className="filters"><span>Top</span></div> */}
   {/* <div className="filters"><span>School</span></div>
   <div className="filters"><span>Personal</span></div> */}
 </div>
