@@ -28,7 +28,7 @@ const skills = () => {
             <h3>Front-end</h3>
             <ul>
               <li><img src={react} alt="" />React</li>
-              <li><img src={typescript} alt="" />typescript</li>
+              <li><img src={typescript} alt="" />Typescript</li>
               <li></li>
             </ul>
           </div>

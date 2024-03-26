@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
 .container {
-  width: 1000px;
+  width: 100%;
   display: flex;
   justify-content: center;
 
@@ -28,7 +28,7 @@
         0 100px 80px rgba(0, 0, 0, 0.2);
       transform: translateY(-50%);
       transition: 0.5s;
-
+      width: 380px;
       .card-title {
         margin: 0 0 0.75em 0;
         font-size: 1.25em;
@@ -67,5 +67,16 @@
         transform: translateY(0);
       }
     }
+  }
+}
+@media (max-width: 1226px) {
+  .container {
+    // width: 1000px;
+    width: 100%; /* Ajustez à 100% ou utilisez max-width pour une meilleure réactivité */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-body {
+    width: 380px;
   }
 }

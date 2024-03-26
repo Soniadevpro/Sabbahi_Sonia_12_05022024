@@ -23,11 +23,11 @@ const Card = () => {
         <div>
             <section className="projects-container" id='projects-section'>
 <h3>Projects</h3>
-<div className="categories">
-  {/* <div className="filters"><span>Top</span></div> */}
-  {/* <div className="filters"><span>School</span></div>
-  <div className="filters"><span>Personal</span></div> */}
-</div>
+{/* <div className="categories">
+  <div className="filters"><span>Top</span></div>
+  <div className="filters"><span>School</span></div>
+  <div className="filters"><span>Personal</span></div>
+</div> */}
 <div className="container">
 <div className="card">
                     <img src={sophiaB} alt="Sophia Bluel" className="card-img-top" />
@@ -42,7 +42,7 @@ const Card = () => {
     <div className="card-body">
       <h5 className="card-title">Kasa</h5>
       <p className="card-text">l'entreprise Kasa hébergement entre particulier.</p>
-      <a href="#" className="btn">More</a>
+      <button onClick={() => openModal(kasa, "Description de Kasa...")} className="btn">More</button>
     </div>
   </div>
   <div className="card">
@@ -50,7 +50,7 @@ const Card = () => {
     <div className="card-body">
       <h5 className="card-title">Argent Bank</h5>
       <p className="card-text"></p>
-      <a href="#" className="btn">More</a>
+      <button onClick={() => openModal(argentbank, "Description de Argent Bank...")} className="btn">More</button>
     </div>
   </div>
 </div>
@@ -65,7 +65,7 @@ const Card = () => {
             <div className="card-body">
               <h5 className="card-title">Openclassrooms</h5>
               <p className="card-text">Développeur/Intégrateur web</p>
-              <a href="#" className="btn">More</a>
+              <a href="https://openclassrooms.com/fr/" className="btn">More</a>
             </div>
           </div>
 
@@ -74,7 +74,7 @@ const Card = () => {
             <div className="card-body">
               <h5 className="card-title">Mike-Codeur formation</h5>
               <p className="card-text">Expert React</p>
-              <a href="#" className="btn">More</a>
+              <a href="https://www.mikecodeur.com/formations/" className="btn">More</a>
             </div>
           </div>
           <div className="card">
@@ -82,7 +82,7 @@ const Card = () => {
             <div className="card-body">
               <h5 className="card-title">Openclassrooms</h5>
               <p className="card-text">Développeur JavaScript - React</p>
-              <a href="#" className="btn">More</a>
+              <a href="https://openclassrooms.com/fr/" className="btn">More</a>
             </div>
           </div>
         </div>

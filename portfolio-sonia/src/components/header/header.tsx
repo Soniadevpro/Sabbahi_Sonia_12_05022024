@@ -17,6 +17,11 @@ const navigationItems: NavigationItem[] = [
 const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   const checkActiveSection = () => {
     let currentSectionId = null;
@@ -30,58 +35,67 @@ const Header: React.FC = () => {
         }
       }
     });
-  
+
     setActiveSection(currentSectionId);
   };
 
-  
-   
-
-    useEffect(() => {
-      const handleScroll = () => {
-        const isScrolled = window.scrollY > 100;
-        if (isScrolled !== scrolled) {
-          setScrolled(isScrolled);
-        }
-    
-        checkActiveSection(); // Utilisez ici la fonction de vérification
-      };
-    
-      window.addEventListener('scroll', handleScroll);
-      handleScroll(); // Vérifiez la section active dès le chargement
-    
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, [scrolled]); // Pen // Dependencies of the effect
-
-    const scrollToSection = (id: string): void => {
-      const section = document.getElementById(id);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-        setTimeout(() => {
-          checkActiveSection(); // Force la mise à jour de la section active
-        }, 100); // Vous pouvez ajuster ce délai si nécessaire
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 100;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
       }
+
+      checkActiveSection();
     };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
+
+  const scrollToSection = (id: string): void => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        checkActiveSection();
+      }, 100);
+    }
+  };
 
   return (
     <div>
       <header id='home-section'>
-        <div className="containernavbar">
-          <div className={`navbar ${scrolled ? 'scrolled' : ''}`} >
-            <ul>
-              {navigationItems.map((item) => (
-                <li key={item.id} className={activeSection === item.id ? 'active' : ''}>
-                  {item.action ? (
-                    <button onClick={() => scrollToSection(item.id)}>{item.name}</button>
-                  ) : (
-                    <span>{item.name}</span> // or use <a href={`#${item.id}`}> for actual links
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
+        <input id="menu__toggle" type="checkbox" checked={menuOpen} onChange={toggleMenu} />
+        <label className="menu__btn" htmlFor="menu__toggle">
+          <span></span>
+        </label>
+        <ul className={`menu__box ${menuOpen ? '' : ''}`} style={{left: menuOpen ? '0' : '-100%'}}>
+          {navigationItems.map((item) => (
+            <li key={item.id} className={activeSection === item.id ? 'active' : ''}>
+              <a className="menu__item" href="#" onClick={() => {
+                scrollToSection(item.id);
+                setMenuOpen(false);
+              }}>{item.name.split('.')[1]}</a>
+            </li>
+          ))}
+        </ul>
+        <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+          <ul>
+            {navigationItems.map((item) => (
+              <li key={item.id} className={activeSection === item.id ? 'active' : ''}>
+                {item.action ? (
+                  <button onClick={() => scrollToSection(item.id)}>{item.name.split('.')[1]}</button>
+                ) : (
+                  <span>{item.name.split('.')[1]}</span>
+                )}
+              </li>
+            ))}
+          </ul>
         </div>
       </header>
     </div>

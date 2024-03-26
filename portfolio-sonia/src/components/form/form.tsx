@@ -49,7 +49,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className='form-container'>
       <form id="form" className="topBefore" ref={formRef} onSubmit={handleSubmit}>
         <h3 className="title-form" id='contact-section'>Contactez moi</h3>
         <input id="name" name="name" type="text" placeholder="NAME" value={formValues.name} onChange={handleChange} />

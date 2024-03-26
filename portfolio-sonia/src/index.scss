@@ -16,10 +16,9 @@ $color-hover: #e2dedb;
 @import "./components/form/form.scss";
 @import "./components/header/header.scss";
 @import "./components/hero/hero.scss";
-@import "./components/card/card.scss";
 
 body {
-  margin: auto;
+  margin: 0;
   padding: 0;
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;

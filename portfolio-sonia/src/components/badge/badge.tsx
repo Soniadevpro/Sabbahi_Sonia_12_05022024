@@ -3,7 +3,7 @@
 const Badge = () => {
     return (
         <div>
-            <div className="description-container">
+           
                 <div className="social-network">
 
                 <a href="https://github.com/Soniadevpro" target="_blank" rel="noopener noreferrer">
@@ -17,7 +17,7 @@ const Badge = () => {
         
         <div className="badge">CV</div>
                 </div>
-            </div>  
+           
           
         </div>
       
