@@ -5,7 +5,7 @@ const footer = () => {
         <div>
             <footer>
             <Badge/>
-
+            <p>Sonia Sabbahi © Mentions légales</p>
             </footer>
         </div>
     );

@@ -59,6 +59,8 @@ const ContactForm: React.FC = () => {
         {errorMessage && <div className="message-box error-message">{errorMessage}</div>}
         {!isSubmitted && !errorMessage && <input id="submit" type="submit" value="GO!" />}
       </form>
+      <p className='number-mail'>Tel : 06-66-62-73-33 / Email : soniadevpro@gmail.com</p>
+     
     </div>
   );
 };
