@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./views/home/home";
 import Skills from "./views/skills/skills";
 import Projects from "./views/projects/projects";
+import Contact from "./views/contact/contact";
 const App: React.FC = () => {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact/>} />
         {/* <Route path="*" element={<Erreur />} /> */}
       </Routes>
       {/* <Footer /> */}

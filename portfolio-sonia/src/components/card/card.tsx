@@ -58,14 +58,14 @@ const Card = () => {
 </section>
 
 <section className="projects-container" id= 'courses-section'>
-        <h3 id= 'courses-section'>Courses</h3>
+        <h3 >Courses</h3>
         <div className="container">
           <div className="card">
             <img src={logoOC} alt="Sora" className="card-img-top" />
             <div className="card-body">
               <h5 className="card-title">Openclassrooms</h5>
               <p className="card-text">Développeur/Intégrateur web</p>
-              <a href="https://openclassrooms.com/fr/" className="btn">More</a>
+              <a href="https://openclassrooms.com/fr/" target="_blank" rel="noopener noreferrer"className="btn">More</a>
             </div>
           </div>
 
@@ -74,7 +74,7 @@ const Card = () => {
             <div className="card-body">
               <h5 className="card-title">Mike-Codeur formation</h5>
               <p className="card-text">Expert React</p>
-              <a href="https://www.mikecodeur.com/formations/" className="btn">More</a>
+              <a href="https://www.mikecodeur.com/formations/"target="_blank" rel="noopener noreferrer" className="btn">More</a>
             </div>
           </div>
           <div className="card">
@@ -82,7 +82,7 @@ const Card = () => {
             <div className="card-body">
               <h5 className="card-title">Openclassrooms</h5>
               <p className="card-text">Développeur JavaScript - React</p>
-              <a href="https://openclassrooms.com/fr/" className="btn">More</a>
+              <a href="https://openclassrooms.com/fr/" target="_blank" rel="noopener noreferrer"className="btn">More</a>
             </div>
           </div>
         </div>

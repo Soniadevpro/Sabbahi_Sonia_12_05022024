@@ -11,7 +11,7 @@ const navigationItems: NavigationItem[] = [
   { name: '1.Skills', id: 'skills-section', action: 'scrollToSkills' },
   { name: '2.Projects', id: 'projects-section', action: 'scrollToProjects' },
   { name: '3.Courses', id: 'courses-section', action: 'scrollToCourses' },
-  { name: '4.Contact', id: 'contact-section', action: 'scrollToContact' },
+ 
 ];
 
 const Header: React.FC = () => {
@@ -90,6 +90,7 @@ const Header: React.FC = () => {
               <li key={item.id} className={activeSection === item.id ? 'active' : ''}>
                 {item.action ? (
                   <button onClick={() => scrollToSection(item.id)}>{item.name.split('.')[1]}</button>
+                  
                 ) : (
                   <span>{item.name.split('.')[1]}</span>
                 )}
@@ -97,6 +98,16 @@ const Header: React.FC = () => {
             ))}
           </ul>
         </div>
+            <div className="box-contact">
+
+            <a href="#contact-section" className="button type--A">
+    <div className="button__line"></div>
+    <div className="button__line"></div>
+    <span className="button__text">Contactez moi</span>
+    <div className="button__drow1"></div>
+    <div className="button__drow2"></div>
+  </a>
+            </div>
       </header>
     </div>
   );

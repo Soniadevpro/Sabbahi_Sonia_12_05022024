@@ -49,9 +49,9 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className='form-container'>
+    <div className='form-container' >
       <form id="form" className="topBefore" ref={formRef} onSubmit={handleSubmit}>
-        <h3 className="title-form" id='contact-section'>Contactez moi</h3>
+        <h3 className="title-form" >Contactez moi</h3>
         <input id="name" name="name" type="text" placeholder="NAME" value={formValues.name} onChange={handleChange} />
         <input id="email" name="email" type="email" placeholder="E-MAIL" value={formValues.email} onChange={handleChange} />
         <textarea id="message" name="message" placeholder="MESSAGE" value={formValues.message} onChange={handleChange}></textarea>

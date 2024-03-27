@@ -1,9 +1,10 @@
 import Header from "../../components/header/header";
 import Hero from "../../components/hero/hero";
+import Badge from "../../components/badge/badge"
 import Skills from "../skills/skills";
 import Projects from "../../views/projects/projects"
-import Form from "../../components/form/form"
-import Badge from "../../components/badge/badge"
+
+import Contact from "../contact/contact";
 import Footer from "../../components/footer/footer"
 const home = () => {
     return (
@@ -13,7 +14,7 @@ const home = () => {
             <Badge/>
             <Skills/>
             <Projects/>
-            <Form/>
+            <Contact/>
             <Footer/>
         </div>
     );

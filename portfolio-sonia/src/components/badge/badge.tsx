@@ -15,7 +15,8 @@ const Badge = () => {
          <a href="https://www.linkedin.com/in/sonia-sabbahi" target="_blank" rel="noopener noreferrer">
         <div className="badge">LinkedIn</div></a>
         
-        <div className="badge">CV</div>
+        <a href="../../../public/CV - Sonia.pdf" target="_blank" rel="noopener noreferrer">
+        <div className="badge">CV</div></a>
                 </div>
            
           
