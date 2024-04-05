@@ -1,0 +1,42 @@
+// Définition des variables globales
+$gradient-primary: rgb(207, 93, 39);
+$gradient-secondary: rgb(215, 90, 219);
+$font-family-base: "Lato", sans-serif;
+$color-base: #726659;
+$background-hover: #242323;
+$color-hover: #e2dedb;
+
+// imports
+@import "./views/home/home.scss";
+@import "./views/projects/projects.scss";
+@import "./views/skills/skills.scss";
+@import "./components/badge/badge.scss";
+@import "./components/card/card.scss";
+@import "./components/footer/footer.scss";
+@import "./components/form/form.scss";
+@import "./components/header/header.scss";
+@import "./components/hero/hero.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgb(0, 0, 0) 35%, rgb(29, 27, 27) 45%, rgb(22, 18, 21) 75%, rgb(0, 0, 0) 98%);
+  animation: gradient 20s ease-in-out infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

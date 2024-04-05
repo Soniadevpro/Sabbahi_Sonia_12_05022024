@@ -1,0 +1,23 @@
+[
+    {
+      "id": "sophiaB",
+      "title": "Portfolio - Sophia Bluel",
+      "description": "Développer un portfolio d'architecte, en commençant par la page de présentation des travaux de celle-ci.",
+      "photoUrl": "chemin/vers/sophiabluel.png",
+      "moreInfo": "Information supplémentaire spécifique au projet Sophia Bluel..."
+    },
+    {
+      "id": "kasa",
+      "title": "Kasa",
+      "description": "L'entreprise Kasa hébergement entre particulier.",
+      "photoUrl": "chemin/vers/kasa.png",
+      "moreInfo": "Information supplémentaire spécifique au projet Kasa..."
+    },
+    {
+      "id": "argentBank",
+      "title": "Argent Bank",
+      "description": "Description de Argent Bank...",
+      "photoUrl": "chemin/vers/argentbank.png",
+      "moreInfo": "Information supplémentaire spécifique au projet Argent Bank..."
+    }
+  ]

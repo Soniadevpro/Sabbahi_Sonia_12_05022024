@@ -1,0 +1,67 @@
+.social-network {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+.badge {
+  height: 30px;
+  width: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 0.8rem $font-family-base;
+  cursor: pointer;
+  will-change: transform;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    background-color: $gradient-secondary;
+    transition: all 250ms ease-in-out;
+  }
+
+  &::before {
+    width: 2px;
+    height: 30px;
+    box-shadow: 98px 0 $gradient-secondary;
+  }
+
+  &::after {
+    height: 2px;
+    width: 100px;
+    box-shadow: 0 28px $gradient-secondary;
+  }
+
+  &:hover::before {
+    left: -5px;
+    box-shadow: 108px 0 $gradient-secondary;
+  }
+
+  &:hover::after {
+    top: -5px;
+    box-shadow: 0 38px $gradient-primary;
+  }
+}
+a .badge {
+  text-decoration: none !important;
+  color: white;
+}
+.social-network a .badge {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 500px) {
+  .social-network {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}

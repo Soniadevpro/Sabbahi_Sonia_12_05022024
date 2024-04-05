@@ -1,0 +1,63 @@
+/*Projects - categories - cardcontainer - card*/
+@import url("https://fonts.googleapis.com/css?family=Lato");
+$font-family-base: "Lato", sans-serif;
+$gradient-primary: rgb(207, 93, 39);
+$gradient-secondary: rgb(215, 90, 219);
+$font-family-base: "Lato", sans-serif;
+$color-base: #726659;
+$background-hover: #242323;
+$color-hover: #e2dedb;
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px;
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .filters {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: $font-family-base;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all 0.35s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $gradient-secondary;
+
+      &:after {
+        width: 100%;
+        color: white;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(to right, $gradient-primary, $gradient-secondary);
+      transition: all 0.4s;
+    }
+  }
+}
