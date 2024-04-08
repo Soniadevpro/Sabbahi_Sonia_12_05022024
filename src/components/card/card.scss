@@ -76,7 +76,29 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .card-body {
-    width: 380px;
+}
+// @media (max-width: 500px) {
+//   .container {
+//     // width: 1000px;
+//     width: 100%; /* Ajustez à 100% ou utilisez max-width pour une meilleure réactivité */
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+//   .card-body {
+//     width: 380px;
+//   }
+// }
+@media (max-width: 450px) {
+  .container {
+    .card {
+      .card-img-top {
+        width: 100%;
+        height: 180px;
+      }
+
+      .card-body {
+        width: 100%;
+      }
+    }
   }
 }

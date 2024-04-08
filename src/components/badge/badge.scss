@@ -59,9 +59,8 @@ a .badge {
 }
 @media (max-width: 500px) {
   .social-network {
-    display: flex;
-    gap: 15px;
-    justify-content: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
   }
 }

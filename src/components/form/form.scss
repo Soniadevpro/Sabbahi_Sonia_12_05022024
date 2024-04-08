@@ -114,7 +114,7 @@ textarea {
 
   #form {
     position: relative;
-    width: 500px;
+    width: 335px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,5 +122,8 @@ textarea {
 
   #submit {
     width: 332px;
+  }
+  .number-mail {
+    text-align: center;
   }
 }

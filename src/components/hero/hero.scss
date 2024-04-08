@@ -64,34 +64,21 @@ h1 {
       display: flex;
       justify-content: space-between;
     }
-
-    h1 {
-      // Définit le dégradé linéaire avec les couleurs souhaitées
-      background-image: linear-gradient(to right, rgb(207, 70, 39), rgb(215, 70, 230));
-
-      // Fait en sorte que le dégradé s'applique sur le texte
-      -webkit-background-clip: text;
-      background-clip: text;
-
-      // Rend la couleur du texte transparente pour que le dégradé soit visible
-      color: transparent;
-
-      // Assurez-vous que le texte conserve un bon rendu même avec un fond
-      -webkit-text-fill-color: transparent;
-      font-size: 50px;
-      margin: 0;
-    }
   }
   .p-photo {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
   }
   .descript-me {
     display: flex;
-    font-size: 20px;
+    font-size: 15px;
     padding: 15px;
-    width: 70%;
+    width: 100%;
+  }
+  h1 {
+    font-size: 35px;
+    margin: 0;
   }
 }
