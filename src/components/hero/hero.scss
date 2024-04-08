@@ -6,7 +6,6 @@
 }
 
 h1 {
-  margin-top: 15px;
   // Définit le dégradé linéaire avec les couleurs souhaitées
   background-image: linear-gradient(to right, rgb(207, 70, 39), rgb(215, 70, 230));
 
@@ -19,9 +18,10 @@ h1 {
 
   // Assurez-vous que le texte conserve un bon rendu même avec un fond
   -webkit-text-fill-color: transparent;
-  font-size: 105px;
-  margin-top: 65px;
+  font-size: 80px;
+  margin-top: 15px;
   margin-bottom: 0;
+  font-family: "Pacifico", cursive;
 }
 
 .border {
