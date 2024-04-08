@@ -98,6 +98,9 @@
 
       .card-body {
         width: 100%;
+        .card-text {
+          display: none;
+        }
       }
     }
   }

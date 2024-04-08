@@ -52,7 +52,10 @@ $overlay-z-index: 2;
   background: none;
   border: none;
   img {
+    right: -12px;
     width: 30px;
+    position: relative;
+    top: -30px;
   }
   &:hover {
     cursor: pointer;

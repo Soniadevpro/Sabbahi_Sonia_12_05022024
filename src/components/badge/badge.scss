@@ -4,7 +4,15 @@
   justify-content: flex-start;
   margin-left: 30px;
 }
+// Cible tous les éléments <a> dans .social-network et leurs descendants
+a,
+a:visited {
+  // Enlève le soulignement
+  text-decoration: none;
 
+  // Ajoute d'autres styles de lien ici si nécessaire
+  color: white; // Utilisez votre variable de couleur ou une valeur spécifique
+}
 .badge {
   height: 30px;
   width: 100px;
@@ -21,6 +29,7 @@
     position: absolute;
     top: 0;
     left: 0;
+
     content: "";
     display: block;
     background-color: $gradient-secondary;
@@ -49,14 +58,7 @@
     box-shadow: 0 38px $gradient-primary;
   }
 }
-a .badge {
-  text-decoration: none !important;
-  color: white;
-}
-.social-network a .badge {
-  text-decoration: none;
-  color: white;
-}
+
 @media (max-width: 500px) {
   .social-network {
     flex-wrap: wrap;

@@ -1,23 +1,26 @@
 [
     {
-      "id": "sophiaB",
+      "id": 1,
       "title": "Portfolio - Sophia Bluel",
       "description": "Développer un portfolio d'architecte, en commençant par la page de présentation des travaux de celle-ci.",
-      "photoUrl": "chemin/vers/sophiabluel.png",
-      "moreInfo": "Information supplémentaire spécifique au projet Sophia Bluel..."
+      "photoUrl": "../src/assets/photos/sophiabluel.png",
+      "moreInfo": "Ce projet m'a initié à la création de site web dynamique, en utilsant JavaScript, HTML et CSS. J'ai pu apprendre à gérer une page de connexion, faire un appel à une API, poster, modifier et supprimer des éléments dynamiquement. Gérer l'ouverture et la fermeture de modale, et bien d'autres choses encore.",
+      "technologies": ["html5", "css3", "javascript"],
+      "githubUrl": "https://github.com/monGitHub/portfolio-sophia",
+      "projectUrl": "https://monPortfolioSophia.com"
     },
     {
-      "id": "kasa",
+      "id": 2,
       "title": "Kasa",
       "description": "L'entreprise Kasa hébergement entre particulier.",
-      "photoUrl": "chemin/vers/kasa.png",
-      "moreInfo": "Information supplémentaire spécifique au projet Kasa..."
+      "photoUrl": "../src/assets/kasa.png",
+      "moreInfo": "Ce projet m'a initié à la librairie React, j'ai pu apprendre à créer des composants, les organiser, les styliser, les rendre dynamique, gérer des routes, des formulaires, des requêtes API, et bien d'autres choses encore."
     },
     {
-      "id": "argentBank",
+      "id": 3,
       "title": "Argent Bank",
       "description": "Description de Argent Bank...",
-      "photoUrl": "chemin/vers/argentbank.png",
-      "moreInfo": "Information supplémentaire spécifique au projet Argent Bank..."
+      "photoUrl": "../src/assets/argentbank.png",
+      "moreInfo": "Ce projet m'a initié à Redux, j'ai pu apprendre à gérer un store, des actions, des reducers, des middlewares, des selectors, des slices, des thunks, et bien d'autres choses encore. J'ai pu également apprendre à gérer des requêtes API, des formulaires, des routes, et bien d'autres choses encore."
     }
   ]
