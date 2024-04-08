@@ -77,14 +77,7 @@ const Card = () => {
               <a href="https://www.mikecodeur.com/formations/"target="_blank" rel="noopener noreferrer" className="btn">More</a>
             </div>
           </div>
-          <div className="card">
-            {/* <img src={logoOC} alt="Mori" className="card-img-top" />
-            <div className="card-body">
-              <h5 className="card-title">Openclassrooms</h5>
-              <p className="card-text">Développeur JavaScript - React</p>
-              <a href="https://openclassrooms.com/fr/" target="_blank" rel="noopener noreferrer"className="btn">More</a>
-            </div> */}
-          </div>
+       
         </div>
    
       </section>
