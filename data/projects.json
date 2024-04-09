@@ -1,26 +1,49 @@
-[
-    {
-      "id": 1,
-      "title": "Portfolio - Sophia Bluel",
-      "description": "Développer un portfolio d'architecte, en commençant par la page de présentation des travaux de celle-ci.",
-      "photoUrl": "../src/assets/photos/sophiabluel.png",
-      "moreInfo": "Ce projet m'a initié à la création de site web dynamique, en utilsant JavaScript, HTML et CSS. J'ai pu apprendre à gérer une page de connexion, faire un appel à une API, poster, modifier et supprimer des éléments dynamiquement. Gérer l'ouverture et la fermeture de modale, et bien d'autres choses encore.",
-      "technologies": ["html5", "css3", "javascript"],
-      "githubUrl": "https://github.com/monGitHub/portfolio-sophia",
-      "projectUrl": "https://monPortfolioSophia.com"
-    },
-    {
-      "id": 2,
-      "title": "Kasa",
-      "description": "L'entreprise Kasa hébergement entre particulier.",
-      "photoUrl": "../src/assets/kasa.png",
-      "moreInfo": "Ce projet m'a initié à la librairie React, j'ai pu apprendre à créer des composants, les organiser, les styliser, les rendre dynamique, gérer des routes, des formulaires, des requêtes API, et bien d'autres choses encore."
-    },
-    {
-      "id": 3,
-      "title": "Argent Bank",
-      "description": "Description de Argent Bank...",
-      "photoUrl": "../src/assets/argentbank.png",
-      "moreInfo": "Ce projet m'a initié à Redux, j'ai pu apprendre à gérer un store, des actions, des reducers, des middlewares, des selectors, des slices, des thunks, et bien d'autres choses encore. J'ai pu également apprendre à gérer des requêtes API, des formulaires, des routes, et bien d'autres choses encore."
-    }
-  ]
+[{
+  "title": "Argent Bank",
+  "content": "Ce projet m'a appris à créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API. Cela implique la gestion des événements utilisateurs et la manipulation des éléments du DOM avec JavaScript.  Il fallait créer également une page de connexion pour l'administrateur du site ainsi qu'une modale permettant d'uploader de nouveaux médias",
+  "githubUrl": "https://github.com/Soniadevpro/Sabbahi_Sonia_11_15022024.git",
+  "photoUrl" :"../src/assets/sophiabluel.png" ,
+    "icons": [
+      {
+        "name": "JavaScript",
+        "url": "../src/assets/icon/icons8-javascript.svg"
+      },
+      {
+        "name": "API",
+        "url": "chemin/vers/api.svg"
+      }]
+},
+
+
+{
+  "title": "Kasa Project",
+  "content": "Le projet était basé sur la logique de présentation des données et les composants React. React Router a été utilisé pour configurer la navigation entre les différentes pages de l'application. Cela permet de comprendre comment gérer efficacement le routage dans une application web moderne. Le projet se concentrera exclusivement sur le développement front-end, en se basant sur les maquettes fournies et en utilisant des données simulées extraites d'un fichier JSON.",
+  "githubUrl": "https://github.com/exemple/argentbank",
+  "photoUrl" :"" ,
+    "icons": [
+      {
+        "name": "JavaScript",
+        "url": "chemin/vers/javascript.svg"
+      },
+      {
+        "name": "API",
+        "url": "chemin/vers/api.svg"
+      }]
+},
+
+
+{
+  "title": "Kasa Project",
+  "content": "Le projet était basé sur la logique de présentation des données et les composants React. React Router a été utilisé pour configurer la navigation entre les différentes pages de l'application. Cela permet de comprendre comment gérer efficacement le routage dans une application web moderne. Le projet se concentrera exclusivement sur le développement front-end, en se basant sur les maquettes fournies et en utilisant des données simulées extraites d'un fichier JSON.",
+  "githubUrl": "https://github.com/exemple/argentbank",
+  "photoUrl" :"" ,
+    "icons": [
+      {
+        "name": "JavaScript",
+        "url": "chemin/vers/javascript.svg"
+      },
+      {
+        "name": "API",
+        "url": "chemin/vers/api.svg"
+      }]
+}]
