@@ -35,6 +35,29 @@ h1 {
   padding: 20px;
 }
 
+@mixin keyframes-rotation {
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+// Définition des keyframes
+@mixin keyframes-rotation {
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
 .p-photo {
   display: flex;
   flex-direction: row-reverse;
@@ -42,12 +65,20 @@ h1 {
   justify-content: flex-end;
 
   img {
-    width: 200px;
-    height: 200px;
-    border-radius: 300px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; // Pour un cercle parfait, utilisez 50%
+    border: 1px solid white;
+    object-fit: cover;
+    @include keyframes-rotation;
+    animation: rotation 0.9s cubic-bezier(0.03, 0, 0, 1.01) forwards; // Se joue une fois au chargement
+
+    &:hover {
+      @include keyframes-rotation;
+      animation: rotation 0.9s cubic-bezier(0.03, 0, 0, 1.01) forwards; // Se réinitialise et joue au survol
+    }
   }
 }
-
 .descript-me {
   display: flex;
   font-size: 20px;
@@ -61,6 +92,7 @@ h1 {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
       .descript-me {
         width: 100%;
       }

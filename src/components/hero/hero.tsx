@@ -1,4 +1,4 @@
-import photo from "../../assets/photos/simple.webp"
+import photo from "../../assets/photos/IMG_1636.jpg"
 
 const hero = () => {
     return (
