@@ -48,6 +48,8 @@ function Card() {
     </figure>
 
      </div>
+     <div className="courses-container" id='courses-section'>
+
      <h3 >Formations</h3>
      <div className="position-block">
     <figure className="image-block-courses">
@@ -72,6 +74,7 @@ function Card() {
     </figure>
  
 
+     </div>
      </div>
     </div>
     </>
