@@ -8,6 +8,7 @@ import oc from "../../assets/logo-OpenClassRooms-COM-du-SITE-WEB-9.jpg"
 
 function Card() {
   return (
+    <>
     <div className='container-card'id='projects-section'>
   
 
@@ -50,7 +51,7 @@ function Card() {
      <h3 >Formations</h3>
      <div className="position-block">
     <figure className="image-block-courses">
-      <h1>Sophia Bluel Architecte</h1>
+      <h1>MIKE CODEUR</h1>
       <img src={sophiaPic} alt="" />
       <figcaption>
         <h2>Plus d'informations</h2>
@@ -60,7 +61,7 @@ function Card() {
       </figcaption>
     </figure>
       <figure className="image-block-courses">
-      <h1>KASA</h1>
+      <h1>OPENCLASSROOMS</h1>
       <img src={oc} alt="" className='oc'/>
       <figcaption>
       <h2>Plus d'informations</h2>
@@ -73,6 +74,7 @@ function Card() {
 
      </div>
     </div>
+    </>
   );
 }
 
