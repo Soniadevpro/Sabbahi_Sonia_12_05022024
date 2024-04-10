@@ -40,7 +40,15 @@ $lg: new-breakpoint(min-width 1024px);
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: #ccc3c3;
+
+  flex-direction: column;
+  h3 {
+    color: rgb(250, 249, 249);
+    font-size: 35px;
+  }
+}
+.position-block {
+  display: flex;
 }
 .position-button {
   display: flex;
@@ -72,6 +80,7 @@ figure {
   overflow: hidden;
   &:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
     h1 {
       opacity: 0;
       transform: scale(0.7);
@@ -104,7 +113,7 @@ figure {
   img {
     height: 100%;
     transition: 0.25s;
-    filter: brightness(0.6);
+    filter: brightness(0.8);
   }
   figcaption {
     position: absolute;
@@ -118,7 +127,7 @@ figure {
     color: white;
     line-height: 1;
     transition: 0.25s;
-    h3 {
+    h2 {
       margin: 0 0 20px;
       padding: 0;
     }
