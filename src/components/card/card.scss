@@ -18,12 +18,6 @@ $lg: new-breakpoint(min-width 1024px);
 }
 
 .container-card {
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-
-  flex-direction: column;
   h3 {
     color: rgb(250, 249, 249);
     font-size: 35px;
