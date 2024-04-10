@@ -16,7 +16,9 @@ $color-hover: #e2dedb;
 @import "./components/form/form.scss";
 @import "./components/header/header.scss";
 @import "./components/hero/hero.scss";
-
+* {
+  box-sizing: content-box;
+}
 body {
   margin: 0;
   padding: 0;
