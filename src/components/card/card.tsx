@@ -4,7 +4,7 @@ import kasaPic from '../../assets/DALL·E 2024-04-10 22.24.44 - Imagine a sleek 
 import sophiaPic from '../../assets/DALL·E 2024-04-10 22.26.49 - Envision a minimalist and elegant website design for an architect, featuring a color palette of green and beige. The homepage is structured to immedia.webp';
 import argetnPics from '../../assets/DALL·E 2024-04-10 22.20.33 - Imagine a sleek and modern user interface for a banking application login screen. The primary color scheme is shades of green, symbolizing security an.webp';
 import oc from "../../assets/logo-OpenClassRooms-COM-du-SITE-WEB-9.jpg"
-
+import mikecodeur from "../../assets/mikeform.png"
 
 function Card() {
   return (
@@ -52,7 +52,7 @@ function Card() {
      <div className="position-block">
     <figure className="image-block-courses">
       <h1>MIKE CODEUR</h1>
-      <img src={sophiaPic} alt="" />
+      <img src={mikecodeur} alt="" />
       <figcaption>
         <h2>Plus d'informations</h2>
         <p>Expert React - Typescript </p>
