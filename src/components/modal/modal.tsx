@@ -1,6 +1,6 @@
 import React from 'react';
 import "./modal.scss"; // Assurez-vous que le chemin d'accès est correct
-
+import cross from "../../assets/icon/icons8-croix.svg"
 interface ModalProps {
   isOpen: boolean;
   photoUrl: string;
@@ -15,7 +15,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, photoUrl, description, onClose })
     <div className="overlay">
       <div className="modal">
         <div className='container-close-button'>
-          <button onClick={onClose} className="close-button">Fermer</button>
+          <button onClick={onClose} className="close-button"><img src={cross} alt="" /></button>
         </div>
         <img src={photoUrl} alt="Contenu Modal" className="modal-img" />
         <p>{description}</p>
