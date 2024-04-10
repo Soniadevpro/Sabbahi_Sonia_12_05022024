@@ -100,7 +100,7 @@
 
   #menu__toggle:checked ~ .menu__box {
     left: 0 !important;
-    z-index: 999;
+    z-index: 510;
     opacity: 0.9;
   }
 
@@ -111,7 +111,7 @@
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 7;
+    z-index: 515;
 
     > span,
     > span::before,
