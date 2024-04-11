@@ -18,12 +18,16 @@ $lg: new-breakpoint(min-width 1024px);
 }
 
 .container-card {
+  margin-top: 180px;
   h3 {
     color: rgb(250, 249, 249);
     font-size: 35px;
     display: flex;
     justify-content: center;
   }
+}
+.courses-container {
+  margin-top: 180px;
 }
 .position-block {
   display: flex;
@@ -102,7 +106,9 @@ figure {
     left: 0;
     width: 100%;
     margin: 0;
-    padding: 30px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 5px;
     background-color: rgba(black, 0.85);
     box-shadow: 0 0 20px rgba(black, 0.4);
     color: white;
@@ -118,6 +124,9 @@ figure {
       line-height: 1.75;
     }
   }
+}
+.courses-contaier {
+  margin-top: 100px;
 }
 @media (max-width: 1361px) {
   .container-card {

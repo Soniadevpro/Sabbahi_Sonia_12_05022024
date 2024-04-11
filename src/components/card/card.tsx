@@ -48,6 +48,7 @@ function Card() {
     </figure>
 
      </div>
+     
      <div className="courses-container" id='courses-section'>
 
      <h3 >Formations</h3>
