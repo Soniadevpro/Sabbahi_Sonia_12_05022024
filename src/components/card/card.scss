@@ -98,7 +98,8 @@ figure {
   img {
     height: 100%;
     transition: 0.25s;
-    filter: brightness(0.8);
+    filter: brightness(0.85);
+    object-fit: cover;
   }
   figcaption {
     position: absolute;
@@ -151,9 +152,7 @@ figure {
     justify-content: center;
   }
 }
-.oc {
-  object-fit: none;
-}
+
 .image-block-courses {
   height: 300px;
   width: 300px;
