@@ -11,7 +11,6 @@ const navigationItems: NavigationItem[] = [
   { name: '1.Skills', id: 'skills-section', action: 'scrollToSkills' },
   { name: '2.Projects', id: 'projects-section', action: 'scrollToProjects' },
   { name: '3.Courses', id: 'courses-section', action: 'scrollToCourses' },
- 
 ];
 
 const Header: React.FC = () => {
@@ -68,53 +67,45 @@ const Header: React.FC = () => {
   };
 
   return (
-    <div>
-      <header id='home-section'>
-        <input id="menu__toggle" type="checkbox" checked={menuOpen} onChange={toggleMenu} />
-        <label className="menu__btn" htmlFor="menu__toggle">
-          <span></span>
-        </label>
-        <ul className={`menu__box ${menuOpen ? '' : ''}`} style={{left: menuOpen ? '0' : '-100%'}}>
+    <header id='home-section'>
+      <input id="menu__toggle" type="checkbox" checked={menuOpen} onChange={toggleMenu} />
+      <label className="menu__btn" htmlFor="menu__toggle">
+        <span></span>
+      </label>
+      <ul className={`menu__box ${menuOpen ? '' : ''}`} style={{ left: menuOpen ? '0' : '-100%' }}>
+        {navigationItems.map((item) => (
+          <li key={item.id} className={activeSection === item.id ? 'active' : ''}>
+            <a className="menu__item" href="#" onClick={() => {
+              scrollToSection(item.id);
+              setMenuOpen(false);
+            }}>{item.name.split('.')[1]}</a>
+          </li>
+        ))}
+      </ul>
+      <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+        <ul>
           {navigationItems.map((item) => (
             <li key={item.id} className={activeSection === item.id ? 'active' : ''}>
-              <a className="menu__item" href="#" onClick={() => {
-                scrollToSection(item.id);
-                setMenuOpen(false);
-              }}>{item.name.split('.')[1]}</a>
+              {item.action ? (
+                <button onClick={() => scrollToSection(item.id)}>{item.name.split('.')[1]}</button>
+              ) : (
+                <span>{item.name.split('.')[1]}</span>
+              )}
             </li>
           ))}
         </ul>
-        <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-          <ul>
-            {navigationItems.map((item) => (
-              <li key={item.id} className={activeSection === item.id ? 'active' : ''}>
-                {item.action ? (
-                  <button onClick={() => scrollToSection(item.id)}>{item.name.split('.')[1]}</button>
-                  
-                ) : (
-                  <span>{item.name.split('.')[1]}</span>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-            <div className="box-contact">
-
-            <a href="#contact-section" className="button type--A">
-    <div className="button__line"></div>
-    <div className="button__line"></div>
-    <span className="button__text">Contactez moi</span>
-    <div className="button__drow1"></div>
-    <div className="button__drow2"></div>
-  </a>
-            </div>
-      </header>
-    </div>
+      </div>
+      <div className="box-contact">
+        <a href="#contact-section" className="button type--A">
+          <div className="button__line"></div>
+          <div className="button__line"></div>
+          <span className="button__text">Contactez moi</span>
+          <div className="button__drow1"></div>
+          <div className="button__drow2"></div>
+        </a>
+      </div>
+    </header>
   );
 };
 
 export default Header;
-
-
-
-// style={{ backgroundColor: scrolled ? 'white' : 'transparent' }}

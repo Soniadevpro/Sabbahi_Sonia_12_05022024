@@ -1,14 +1,12 @@
 import Badge from "../badge/badge";
 
-const footer = () => {
+const Footer = () => {
     return (
-        <div>
-            <footer>
-            <Badge/>
+        <footer>
+            <Badge />
             <p id='contact-section'>Sonia Sabbahi © Mentions légales</p>
-            </footer>
-        </div>
+        </footer>
     );
 };
 
-export default footer;
+export default Footer;

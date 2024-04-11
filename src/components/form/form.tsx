@@ -20,7 +20,7 @@ const ContactForm: React.FC = () => {
     });
     // Réinitialiser les messages d'erreur et de confirmation lors de la saisie
     setErrorMessage('');
-    if(isSubmitted) setIsSubmitted(false);
+    if (isSubmitted) setIsSubmitted(false);
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -41,7 +41,8 @@ const ContactForm: React.FC = () => {
         setFormValues({ name: '', email: '', message: '' });
         setErrorMessage('');
         setTimeout(() => setIsSubmitted(false), 5000);
-      }, (error) => {
+      })
+      .catch((error) => {
         console.log(error.text);
         // Gérer l'erreur ici, par exemple en définissant un message d'erreur
         setErrorMessage('Une erreur est survenue lors de l\'envoi du message.');
@@ -49,9 +50,9 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className='form-container' >
+    <div className='form-container'>
       <form id="form" className="topBefore" ref={formRef} onSubmit={handleSubmit}>
-        <h3 className="title-form" >Contactez moi</h3>
+        <h3 className="title-form">Contactez moi</h3>
         <input id="name" name="name" type="text" placeholder="NAME" value={formValues.name} onChange={handleChange} />
         <input id="email" name="email" type="email" placeholder="E-MAIL" value={formValues.email} onChange={handleChange} />
         <textarea id="message" name="message" placeholder="MESSAGE" value={formValues.message} onChange={handleChange}></textarea>
@@ -60,7 +61,6 @@ const ContactForm: React.FC = () => {
         {!isSubmitted && !errorMessage && <input id="submit" type="submit" value="GO!" />}
       </form>
       <p className='number-mail'>Tel : 06-66-62-73-33 / Email : soniadevpro@gmail.com</p>
-     
     </div>
   );
 };
