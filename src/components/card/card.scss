@@ -114,7 +114,15 @@ figure {
     color: white;
     line-height: 1;
     transition: 0.25s;
+    a {
+      border: solid 1px #f8f7f7;
+      padding: 5px;
 
+      &:hover {
+        color: blueviolet;
+        background: rgb(230, 223, 223);
+      }
+    }
     h2 {
       margin: 0 0 20px;
       padding: 0;
