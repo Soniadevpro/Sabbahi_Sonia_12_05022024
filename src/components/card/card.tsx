@@ -47,17 +47,17 @@ function Card() {
             <img src={mikecodeur} alt="" />
             <figcaption>
               <h2>Plus d'informations</h2>
-              <p>Expert React - Typescript </p>
-              <button>Lien vers la formation</button>
+              <p>Expert React - Typescript 🚀</p>
+              <a href="https://www.mikecodeur.com/formations/"target="_blank" rel="noopener noreferrer">La formation</a>
             </figcaption>
           </figure>
           <figure className="image-block-courses">
-            <h1>OPENCLASSROOMS</h1>
+            <h1>OPENCLASSROOMS </h1>
             <img src={oc} alt="" className='oc'/>
             <figcaption>
               <h2>Plus d'informations</h2>
-              <p>Titre RNCP de niveau 5 - Bac+2.</p>
-              <button>Lien vers la formation</button>
+              <p>Titre RNCP de niveau 5 - Bac+2 💻</p>
+              <a href="https://openclassrooms.com/fr/"target="_blank" rel="noopener noreferrer">La formation</a>
             </figcaption>
           </figure>
         </div>
