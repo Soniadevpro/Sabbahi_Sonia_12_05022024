@@ -16,6 +16,7 @@ function Card() {
             <h2>Plus d'informations</h2>
             <p>Ce projet m'a initié à la création de site dynamique en Javascript, à la création d'un système de connexion, à manipuler une API, ajouter et supprimer des éléments dynamiquement.</p>
             <a href="https://github.com/Soniadevpro/Sabbahi_Sonia_6_04102023.git" target="_blank" rel="noopener noreferrer">Github</a>
+         
           </figcaption>
         </figure>
         <figure className="image-block">
