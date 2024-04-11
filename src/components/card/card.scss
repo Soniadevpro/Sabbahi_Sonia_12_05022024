@@ -75,7 +75,7 @@ figure {
   h1 {
     position: absolute;
     top: 50px;
-    left: 20px;
+
     margin: 0;
     padding: 0;
     color: white;
@@ -86,9 +86,10 @@ figure {
     transform: scale(1);
     transition: 0.25s ease;
     z-index: 500;
-    background-color: rgba(0, 0, 0, 0.733);
+    background: linear-gradient(to right, rgb(207, 70, 39), rgb(215, 70, 230));
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     width: 100%;
+    text-align: center;
   }
   img {
     height: 100%;
@@ -107,6 +108,7 @@ figure {
     color: white;
     line-height: 1;
     transition: 0.25s;
+
     h2 {
       margin: 0 0 20px;
       padding: 0;
@@ -114,20 +116,6 @@ figure {
     p {
       font-size: 14px;
       line-height: 1.75;
-    }
-    .button-card {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 10px 0 0;
-      padding: 10px 30px;
-      background-color: $color-2;
-      border: none;
-      border-radius: 5px;
-      color: white;
-      font-size: 14px;
-      cursor: pointer;
     }
   }
 }

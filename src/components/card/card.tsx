@@ -20,7 +20,7 @@ function Card() {
       <figcaption>
         <h2>Plus d'informations</h2>
         <p>Ce projet m'a initié à la création de site dynamique en Javascript, à la création d'un système de connexion, à manipuler une API, ajouter et supprimer des éléments dynamiquement. </p>
-        <button>Github</button>
+        <button><a href="https://github.com/Soniadevpro/Sabbahi_Sonia_6_04102023.git"target="_blank" rel="noopener noreferrer">Github</a></button>
         <button>Javascript</button>
       </figcaption>
     </figure>
@@ -30,7 +30,7 @@ function Card() {
       <figcaption>
       <h2>Plus d'informations</h2>
         <p>L'objectif de ce projet était de faire passer l'application anciennement en ASP.NET en React.js. Apprendre à utiliser les hooks, les composants, les props, et donner du style avec le préprocesseur SASS.</p>
-        <button >Github</button>
+        <button><a href="https://github.com/Soniadevpro/Sabbahi_Sonia_8_05122023.git"target="_blank" rel="noopener noreferrer">Github</a></button>
         <button >React</button>
         <button >SASS</button>
       </figcaption>
@@ -41,7 +41,7 @@ function Card() {
       <figcaption>
       <h2 >Plus d'informations</h2>
         <p>Nouvelle application bancaire sur le marché, Argent Bank est une initiation à Redux avec React. L'objectif était de créer un système de connexion/déconnexion en passant par le store de Redux.</p>
-        <button>Github</button>
+        <button><a href="https://github.com/Soniadevpro/Sabbahi_Sonia_11_15022024.git"target="_blank" rel="noopener noreferrer">Github</a></button>
         <button>React</button>
         <button>Redux</button>
       </figcaption>
@@ -58,8 +58,8 @@ function Card() {
       <figcaption>
         <h2>Plus d'informations</h2>
         <p>Expert React - Typescript </p>
-        <button>Github</button>
-        <button>Javascript</button>
+        <button>Lien vers la formation</button>
+        
       </figcaption>
     </figure>
       <figure className="image-block-courses">
@@ -68,7 +68,7 @@ function Card() {
       <figcaption>
       <h2>Plus d'informations</h2>
         <p>Titre RNCP de niveau 5 - Bac+2.</p>
-        <button>Informations sur openclassrooms</button>
+        <button>Lien vers la formation</button>
        
       </figcaption>
     </figure>
