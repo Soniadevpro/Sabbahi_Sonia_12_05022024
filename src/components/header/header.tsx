@@ -7,10 +7,10 @@ interface NavigationItem {
 }
 
 const navigationItems: NavigationItem[] = [
-  { name: '0.Home', id: 'home-section', action: 'scrollToHome' },
+  { name: '0.Accueil', id: 'home-section', action: 'scrollToHome' },
   { name: '1.Skills', id: 'skills-section', action: 'scrollToSkills' },
-  { name: '2.Projects', id: 'projects-section', action: 'scrollToProjects' },
-  { name: '3.Courses', id: 'courses-section', action: 'scrollToCourses' },
+  { name: '2.Projets', id: 'projects-section', action: 'scrollToProjects' },
+  { name: '3.Formations', id: 'courses-section', action: 'scrollToCourses' },
 ];
 
 const Header: React.FC = () => {
