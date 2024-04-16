@@ -6,7 +6,7 @@ import mikecodeur from "../../assets/mikeform.png";
 
 
 import js from "../../assets/icon/icons8-js.svg"
-import react from "../../assets/icon/icons8-réagir (4).svg"
+import react from "../../assets/icon/icon-react.svg"
 import redux from "../../assets/icon/icons8-redux.svg"
 
 
