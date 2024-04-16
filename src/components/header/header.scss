@@ -8,7 +8,7 @@
   top: 0;
   width: 100%;
   transition: all 0.3s ease;
-  background: transparent;
+  background-color: #333;
   &.scrolled {
     display: flex;
 
@@ -19,6 +19,7 @@
     height: 50px;
     z-index: 3;
     margin-top: 15px;
+    background-color: #333;
   }
   li {
     --c: linear-gradient(to right, rgb(255, 136, 0), rgb(231, 77, 231)); // Mettez à jour la couleur ici

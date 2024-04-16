@@ -103,8 +103,8 @@ figure {
   }
   figcaption {
     position: absolute;
-    bottom: -34%;
-    left: 0;
+    bottom: -36%;
+    left: -1px;
     width: 100%;
     margin: 0;
     padding-bottom: 30px;
@@ -116,6 +116,16 @@ figure {
     line-height: 1;
     transition: 0.25s;
 
+    .container-link-img {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 10px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
     a {
       border: solid 1px #f8f7f7;
       padding: 5px;

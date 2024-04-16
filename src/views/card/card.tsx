@@ -1,8 +1,17 @@
-import kasaPic from '../../assets/DALL·E 2024-04-10 22.24.44 - Imagine a sleek and engaging web interface for a peer-to-peer lodging platform, with a coral color scheme dominating the design. The homepage is desig.webp';
-import sophiaPic from '../../assets/DALL·E 2024-04-10 22.26.49 - Envision a minimalist and elegant website design for an architect, featuring a color palette of green and beige. The homepage is structured to immedia.webp';
-import argetnPics from '../../assets/DALL·E 2024-04-10 22.20.33 - Imagine a sleek and modern user interface for a banking application login screen. The primary color scheme is shades of green, symbolizing security an.webp';
-import oc from "../../assets/logo-OpenClassRooms-COM-du-SITE-WEB-9.jpg";
+import kasaPic from '../../assets/Kasa.webp';
+import sophiaPic from '../../assets/SophiaB.webp';
+import argetnPics from '../../assets/Argentbank.webp';
+import oc from "../../assets/logoOc.jpg";
 import mikecodeur from "../../assets/mikeform.png";
+
+
+import js from "../../assets/icon/icons8-js.svg"
+import react from "../../assets/icon/icons8-réagir (4).svg"
+import redux from "../../assets/icon/icons8-redux.svg"
+
+
+
+
 
 function Card() {
   return (
@@ -15,7 +24,11 @@ function Card() {
           <figcaption>
             <h2>Plus d'informations</h2>
             <p>Ce projet m'a initié à la création de site dynamique en Javascript, à la création d'un système de connexion, à manipuler une API, ajouter et supprimer des éléments dynamiquement.</p>
+            <div className="container-link-img">
             <a href="https://github.com/Soniadevpro/Sabbahi_Sonia_6_04102023.git" target="_blank" rel="noopener noreferrer">Github</a>
+            <img src={js} alt="javascript"/>
+
+            </div>
          
           </figcaption>
         </figure>
@@ -25,7 +38,12 @@ function Card() {
           <figcaption>
             <h2>Plus d'informations</h2>
             <p>L'objectif de ce projet était de faire passer l'application anciennement en ASP.NET en React.js. Apprendre à utiliser les hooks, les composants, les props, et donner du style avec le préprocesseur SASS.</p>
+            <div className="container-link-img">
             <a href="https://github.com/Soniadevpro/Sabbahi_Sonia_8_05122023.git" target="_blank" rel="noopener noreferrer">Github</a>
+            <a href="https://kasa-soniadevpro.netlify.app/" target="_blank" rel="noopener noreferrer">Lien vers le projet</a>
+            <img src={react} alt="javascript" />
+
+            </div>
           </figcaption>
         </figure>
         <figure className="image-block">
@@ -34,7 +52,12 @@ function Card() {
           <figcaption>
             <h2>Plus d'informations</h2>
             <p>Nouvelle application bancaire sur le marché, Argent Bank est une initiation à Redux avec React. L'objectif était de créer un système de connexion/déconnexion en passant par le store de Redux.</p>
+            <div className="container-link-img">
             <a href="https://github.com/Soniadevpro/Sabbahi_Sonia_11_15022024.git" target="_blank" rel="noopener noreferrer">Github</a>
+            <img src={react} alt="react" />
+            <img src={redux} alt="redux" />
+
+            </div>
           </figcaption>
         </figure>
       </div>
@@ -48,7 +71,10 @@ function Card() {
             <figcaption>
               <h2>Plus d'informations</h2>
               <p>Expert React - Typescript 🚀</p>
+              <div className="container-link-img">
+
               <a href="https://www.mikecodeur.com/formations/"target="_blank" rel="noopener noreferrer">La formation</a>
+              </div>
             </figcaption>
           </figure>
           <figure className="image-block-courses">
@@ -57,7 +83,10 @@ function Card() {
             <figcaption>
               <h2>Plus d'informations</h2>
               <p>Titre RNCP de niveau 5 - Bac+2 💻</p>
+              <div className="container-link-img">
+
               <a href="https://openclassrooms.com/fr/"target="_blank" rel="noopener noreferrer">La formation</a>
+              </div>
             </figcaption>
           </figure>
         </div>

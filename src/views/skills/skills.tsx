@@ -1,15 +1,15 @@
 
 
-import figma from "../../assets/icon/icons8-figma (1).svg"
-import sass from "../../assets/icon/icons8-toupet (1).svg"
+import figma from "../../assets/icon/icon-figma.svg"
+import sass from "../../assets/icon/icon-sass.svg"
 import tailwind from "../../assets/icon/icons8-tailwind-css.svg"
-import react from "../../assets/icon/icons8-réagir (4).svg"
-import typescript from "../../assets/icon/icons8-manuscrit (2).svg"
+import react from "../../assets/icon/icon-react.svg"
+import typescript from "../../assets/icon/icon-typescript.svg"
 import methodeAgile from "../../assets/icon/icons8-agile-64.png"
-import curiosity from "../../assets/icon/icons8-question-64 (1).png"
-import creativity from "../../assets/icon/icons8-creative-64 (1).png"
-
-
+import curiosity from "../../assets/icon/icon-curiosity.png"
+import creativity from "../../assets/icon/icon-crea.png"
+import html from "../../assets/icon/icons8-html.svg"
+import css from "../../assets/icon/icon-css.svg"
 const skills = () => {
     return (
         <div>
@@ -20,6 +20,7 @@ const skills = () => {
             <h3>Design</h3>
             <ul>
               <li><img src={figma} alt="" />Figma</li>
+              <li><img src={css} alt="" />CSS</li>
               <li><img src={sass} alt="" />Sass</li>
               <li><img src={tailwind} alt="" />Tailwind</li>
             </ul>
@@ -29,6 +30,7 @@ const skills = () => {
             <ul>
               <li><img src={react} alt="" />React</li>
               <li><img src={typescript} alt="" />Typescript</li>
+              <li><img src={html} alt="" />HTML</li>
               <li></li>
             </ul>
           </div>
